@@ -26,6 +26,6 @@ namespace Antivirus.Data
         {
             _folderPath = GetLocalPath();
         }
-        private static string GetLocalPath() => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\" + _folderName + @"\";
+        private static string GetLocalPath() => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\" + _folderName;
     }
 }
