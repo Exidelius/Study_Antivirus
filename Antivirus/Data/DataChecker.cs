@@ -9,12 +9,7 @@ namespace Antivirus.Data
 {
     public static class DataChecker
     {
-        static DataChecker()
-        {
-            CheckAndCreateIfNotExistsAllFolders();
-        }
-
-        private static void CheckAndCreateIfNotExistsAllFolders()
+        public static void CheckAndCreateIfNotExists()
         {
             CreateFolderIfNotExists(ServiceInformation.FolderPath);
 

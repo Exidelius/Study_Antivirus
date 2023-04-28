@@ -1,0 +1,11 @@
+C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe.config
+C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.pdb
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.csproj.AssemblyReference.cache
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.csproj.SuggestedBindingRedirects.cache
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.ProjectInstaller.resources
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.Service1.resources
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.csproj.GenerateResource.cache
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.csproj.CoreCompileInputs.cache
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.exe
+C:\Study_Antivirus\Antivirus\Antivirus\obj\Debug\Antivirus.pdb

@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Antivirus.Service
 {
@@ -53,7 +50,7 @@ namespace Antivirus.Service
                         else ResultOperation = "None";
                         break;
                     case HandlerInformation.carantineRecoverAll:
-                        ResultOperation = Carantine.GoOutCarantineAll();
+                        ResultOperation = Carantine.DropCarantine();
                         break;
                     case HandlerInformation.carantineDeleteAll:
                         ResultOperation = Carantine.DeleteAll();
@@ -62,7 +59,7 @@ namespace Antivirus.Service
                         ResultOperation = Carantine.DeleteOne(messArr[1]);
                         break;
                     case HandlerInformation.carantineRecoverOne:
-                        ResultOperation = Carantine.GoOutCarantine(messArr[1]);
+                        ResultOperation = Carantine.GoOutCatantine(messArr[1]);
                         break;
 
                     case HandlerInformation.scanPause:
@@ -142,7 +139,7 @@ namespace Antivirus.Service
 
         public static String DeleteVirus(String fileName)
         {
-            RecycleBin recycle = new RecycleBin();
+            Bin recycle = new Bin();
             if (File.Exists(fileName)) recycle.Recycle(fileName);
             return HandlerInformation.resultDelete;
         }

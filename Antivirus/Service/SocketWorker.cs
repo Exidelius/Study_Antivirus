@@ -78,7 +78,7 @@ namespace Antivirus.Service
 
         private static async Task SentAsync(string message, Socket listener)
         {
-            await Task.Run(() => SheduleHandler.MessageHandlerForShadule(message));
+            await Task.Run(() => SheduleHandler.MessageHandlerForShedule(message));
             String answer = await Task.Run(() => SheduleHandler.StartTask());
             File.AppendAllText(ServiceInformation.SocketPath, "Отпраляю ответ " + answer + "\r\n");
             try

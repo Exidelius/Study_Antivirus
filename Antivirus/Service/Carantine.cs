@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Antivirus.Service
 {
@@ -61,7 +58,7 @@ namespace Antivirus.Service
             }
         }
 
-        private static void DropFromCarantine(string path)
+        public static void DropFromCarantine(string path)
         {
             try
             {
@@ -81,7 +78,7 @@ namespace Antivirus.Service
             }
         }
 
-        private static string DropCarantine()
+        public static string DropCarantine()
         {
             if (virusesInCarantine.Keys.Count > 0) {
                 foreach (var item in virusesInCarantine.Keys)
@@ -93,9 +90,9 @@ namespace Antivirus.Service
             return "Все угрозы освобождены";
         }
 
-        private static string DeleteAll(string path)
+        public static string DeleteAll()
         {
-            RecycleBin recycle = new RecycleBin();
+            Bin recycle = new Bin();
 
             if (virusesInCarantine.Keys.Count > 0)
             {
@@ -109,18 +106,40 @@ namespace Antivirus.Service
             return "Все угрозы уничтожены";
         }
 
-        private static string DeleteOne(string path)
+        public static string DeleteOne(string path)
         {
-            RecycleBin recycle = new RecycleBin();
+            Bin recycle = new Bin();
             try
             {
-                string carantinePath = GetCarantinePathPath(path);
+                string carantinePath = GetCarantinePath(path);
+                recycle.Recycle(carantinePath);
+                virusesInCarantine.Remove(carantinePath);
+
+                var fileInfo = new FileInfo(carantinePath);
+                return $"Файл уничтожен: {fileInfo.Name}";
             }
             catch (Exception ex)
             {
+                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
 
-                throw;
+                return "";
             }
+        }
+
+        public static string ShowCarantineForSent()
+        {
+            string result = "";
+
+            if (virusesInCarantine.Keys.Count > 0)
+            {
+                foreach (var item in virusesInCarantine)
+                {
+                    result += $"{item.Value}";
+                }
+            }
+
+            return result;
         }
     }
 }

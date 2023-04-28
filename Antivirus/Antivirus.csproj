@@ -63,6 +63,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data\ServiceInformation.cs" />
+    <Compile Include="Service\Bin.cs" />
     <Compile Include="Service\Carantine.cs" />
     <Compile Include="Service\MessageHandler.cs" />
     <Compile Include="Service\Scan.cs" />
@@ -77,6 +78,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ProjectInstaller.resx">
       <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service1.resx">
+      <DependentUpon>Service1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
