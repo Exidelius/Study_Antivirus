@@ -1,4 +1,5 @@
-﻿using System.ServiceProcess;
+﻿using System.Runtime.Hosting;
+using System.ServiceProcess;
 using System.Threading;
 using Antivirus.Data;
 

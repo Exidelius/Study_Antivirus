@@ -1,0 +1,338 @@
+﻿Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется откат для сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Восстанавливается исходное состояние журнала событий для источника AntivirusService.
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется откат для сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Восстанавливается исходное состояние журнала событий для источника AntivirusService.
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Выполняется установка сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe
+Устанавливается служба AntivirusService...
+Служба AntivirusService успешно установлена.
+Создается исходный EventLog AntivirusService в журнале Application...
+Выполняется фиксация сборки 'C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.InstallLog
+   assemblypath = C:\Study_Antivirus\Antivirus\Antivirus\bin\Debug\Antivirus.exe

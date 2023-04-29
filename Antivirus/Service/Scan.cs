@@ -44,7 +44,7 @@ namespace Antivirus.Service
                     case "None":
                         break;
                     case HandlerInformation.resultStop:
-                        File.AppendAllText(ServiceInformation.SocketFolderPath, "Остановка сканирования папки\r\n");
+                        File.AppendAllText(ServiceInformation.LogsFolderPath, "Остановка сканирования папки\r\n");
                         return new List<string> { HandlerInformation.resultStop };
                     default:
                         result.Add(scanres);
@@ -58,13 +58,13 @@ namespace Antivirus.Service
         public static string ScanFile(string path)
         {
             byte[] byteArrayFile = File.ReadAllBytes(path);
-            File.AppendAllText(ServiceInformation.SocketPath, $"Сканирую файл {path}\r\n");
+            File.AppendAllText(ServiceInformation.LogsPath, $"Сканирую файл {path}\r\n");
 
             foreach (var signature in txtSign)
             {
                 if (_isStop)
                 {
-                    File.AppendAllText(ServiceInformation.SocketPath, "Остановка сканирования файла\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, "Остановка сканирования файла\r\n");
                     return HandlerInformation.resultStop;
                 }
 
@@ -72,14 +72,14 @@ namespace Antivirus.Service
                 {
                     if (_isStop)
                     {
-                        File.AppendAllText(ServiceInformation.SocketPath, "Остановка сканирования файла\r\n");
+                        File.AppendAllText(ServiceInformation.LogsPath, "Остановка сканирования файла\r\n");
                         return HandlerInformation.resultStop;
                     }
 
                     return path;
                 }
             }
-            File.AppendAllText(ServiceInformation.SocketPath, "Файл чист\r\n");
+            File.AppendAllText(ServiceInformation.LogsPath, "Файл чист\r\n");
             return "None";
         }
 
@@ -96,7 +96,7 @@ namespace Antivirus.Service
                 {
                     if (_isStop)
                     {
-                        File.AppendAllText(ServiceInformation.SocketPath, "Обнаружена остановка сканирования");
+                        File.AppendAllText(ServiceInformation.LogsPath, "Обнаружена остановка сканирования");
                         return false;
                     }
 
@@ -120,8 +120,8 @@ namespace Antivirus.Service
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex}\r\n");
             }
             return false;
         }
@@ -134,16 +134,16 @@ namespace Antivirus.Service
             {
                 DriveInfo[] discs = DriveInfo.GetDrives();
 
-                File.AppendAllText(ServiceInformation.SocketPath, "Диски найдены:\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, "Диски найдены:\r\n");
 
                 foreach (var disc in discs)
                 {
-                    File.AppendAllText(ServiceInformation.SocketPath, "Сканирование диска:\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, "Сканирование диска:\r\n");
 
                     string[] files = GetFiles(disc.Name);
                     if (files[0] == HandlerInformation.resultStop) return new List<string> { HandlerInformation.resultStop };
 
-                    File.AppendAllText(ServiceInformation.SocketPath, $"Получил файлы: {files.Length}\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, $"Получил файлы: {files.Length}\r\n");
 
                     foreach (var file in files)
                     {
@@ -151,7 +151,7 @@ namespace Antivirus.Service
 
                         if (scanres == HandlerInformation.resultStop)
                         {
-                            File.AppendAllText(ServiceInformation.SocketPath, "Остановка сканирования\r\n");
+                            File.AppendAllText(ServiceInformation.LogsPath, "Остановка сканирования\r\n");
                             return new List<string> { HandlerInformation.resultStop };
                         } 
                         result.Add(scanres);
@@ -160,8 +160,8 @@ namespace Antivirus.Service
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex}\r\n");
             }
 
             return result;
@@ -175,7 +175,7 @@ namespace Antivirus.Service
             {
                 if (_isStop) return new string[] { HandlerInformation.resultStop };
 
-                files.AddRange(Directory.GetFiles(path, "*.exe", SearchOption.TopDirectoryOnly));
+                files.AddRange(Directory.GetFiles(path, "*.*", SearchOption.TopDirectoryOnly));
 
                 foreach (var directory in Directory.GetDirectories(path))
                 {
@@ -188,8 +188,8 @@ namespace Antivirus.Service
             {
                 if (!(ex is UnauthorizedAccessException))
                 {
-                    File.AppendAllText(ServiceInformation.SocketPath, $"Сообщение: {ex.Message}\r\n");
-                    File.AppendAllText(ServiceInformation.SocketPath, $"Ошибка: {ex}\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, $"Сообщение: {ex.Message}\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, $"Ошибка: {ex}\r\n");
                 }
             }
 

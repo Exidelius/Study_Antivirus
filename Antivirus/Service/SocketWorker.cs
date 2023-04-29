@@ -41,7 +41,7 @@ namespace Antivirus.Service
                         }
                         else
                         {
-                            File.AppendAllText(ServiceInformation.SocketFolderPath, "Получил сообщение " + message + "\r\b");
+                            File.AppendAllText(ServiceInformation.LogsFolderPath, "Получил сообщение " + message + "\r\b");
                             SentAsync(message, listener);
                         }
                     }
@@ -80,16 +80,16 @@ namespace Antivirus.Service
         {
             await Task.Run(() => SheduleHandler.MessageHandlerForShedule(message));
             String answer = await Task.Run(() => SheduleHandler.StartTask());
-            File.AppendAllText(ServiceInformation.SocketPath, "Отпраляю ответ " + answer + "\r\n");
+            File.AppendAllText(ServiceInformation.LogsPath, "Отпраляю ответ " + answer + "\r\n");
             try
             {
                 SentMessage(answer, listener);
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, ex + "\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, ex + "\r\n");
             }
-            File.AppendAllText(ServiceInformation.SocketPath, "Отправил ответ " + answer + "\r\n");
+            File.AppendAllText(ServiceInformation.LogsPath, "Отправил ответ " + answer + "\r\n");
         }
 
         public static void FinishSocket()

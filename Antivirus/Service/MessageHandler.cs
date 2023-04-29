@@ -15,32 +15,32 @@ namespace Antivirus.Service
             try
             {
                 String[] messArr = operation.ToString().Split('#');
-                File.AppendAllText(ServiceInformation.SocketPath, operation + "\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, operation + "\r\n");
 
                 switch (messArr[0])
                 {
                     case HandlerInformation.scanFile:
-                        File.AppendAllText(ServiceInformation.SocketPath, HandlerInformation.scanFile + " Нашел\r\n");
+                        File.AppendAllText(ServiceInformation.LogsPath, HandlerInformation.scanFile + " Нашел\r\n");
                         ResultOperation = FileScan(messArr[1]);
                         Scan.SetStop(false);
                         break;
                     case HandlerInformation.scanPath:
-                        File.AppendAllText(ServiceInformation.SocketPath, HandlerInformation.scanPath + " Нашел\r\n");
+                        File.AppendAllText(ServiceInformation.LogsPath, HandlerInformation.scanPath + " Нашел\r\n");
                         ResultOperation = PathScan(messArr[1]);
                         Scan.SetStop(false);
                         break;
                     case HandlerInformation.scanFull:
-                        File.AppendAllText(ServiceInformation.SocketPath, HandlerInformation.scanFull + " Нашел\r\n");
+                        File.AppendAllText(ServiceInformation.LogsPath, HandlerInformation.scanFull + " Нашел\r\n");
                         ResultOperation = FullScan();
                         Scan.SetStop(false);
                         break;
 
                     case HandlerInformation.delete:
-                        File.AppendAllText(ServiceInformation.SocketPath, "Удаление" + " Нашел\r\n");
+                        File.AppendAllText(ServiceInformation.LogsPath, "Удаление" + " Нашел\r\n");
                         ResultOperation = DeleteViruses();
                         break;
                     case HandlerInformation.carantine:
-                        File.AppendAllText(ServiceInformation.SocketPath, "Карантин" + " Нашел\r\n");
+                        File.AppendAllText(ServiceInformation.LogsPath, "Карантин" + " Нашел\r\n");
                         ResultOperation = CarantineViruses();
                         break;
 
@@ -75,8 +75,8 @@ namespace Antivirus.Service
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, ex.Message + "\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, ex + "\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, ex.Message + "\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, ex + "\r\n");
             }
 
             return ResultOperation;
@@ -146,11 +146,11 @@ namespace Antivirus.Service
 
         private static String DeleteViruses()
         {
-            File.AppendAllText(ServiceInformation.SocketPath, "Я в удалении" + " Нашел\r\n");
+            File.AppendAllText(ServiceInformation.LogsPath, "Я в удалении" + " Нашел\r\n");
             String result = "";
             foreach (String item in viruses)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, item + " Нашел\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, item + " Нашел\r\n");
                 result = DeleteVirus(item);
             }
             viruses.Clear();
@@ -164,10 +164,10 @@ namespace Antivirus.Service
 
         private static String CarantineViruses()
         {
-            File.AppendAllText(ServiceInformation.SocketPath, "Я в карантине" + " Нашел\r\n");
+            File.AppendAllText(ServiceInformation.LogsPath, "Я в карантине" + " Нашел\r\n");
             foreach (String item in viruses)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, item + " Нашел\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, item + " Нашел\r\n");
                 String newSafePath = Carantine.GoInCarantine(item);
             }
             viruses.Clear();

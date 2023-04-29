@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.ServiceProcess;
 using System.Threading;
 using Antivirus.Data;
@@ -8,6 +9,10 @@ namespace Antivirus
 {
     public partial class Service1 : ServiceBase
     {
+        Thread SocketThread;
+        Thread SheduleThread;
+        Thread WatchThread;
+
         public Service1()
         {
             InitializeComponent();
@@ -23,21 +28,23 @@ namespace Antivirus
 
 
             //Запрет остановки службы после запуска
-            this.CanStop = false;
+            this.CanStop = true;
             this.CanPauseAndContinue = false;
         }
 
         protected override void OnStart(string[] args)
         {
+            //Thread dataCheckerThread = new Thread(DataChecker.CheckAndCreateIfNotExists);
+            //dataCheckerThread.Start();
             DataChecker.CheckAndCreateIfNotExists();
 
-            Thread SocketThread = new Thread(SocketHandler.CreateSocket);
+            SocketThread = new Thread(SocketHandler.CreateSocket);
             SocketThread.Start();
 
-            Thread ShaduleThread = new Thread(SocketWorker.CreateSocket);
-            ShaduleThread.Start();
+            SheduleThread = new Thread(SocketWorker.CreateSocket);
+            SheduleThread.Start();
 
-            Thread WatchThread = new Thread(Worker.WatchForAntivirusService);
+            WatchThread = new Thread(Worker.WatchForAntivirusService);
             WatchThread.Start();
 
         }
@@ -45,6 +52,17 @@ namespace Antivirus
         protected override void OnStop()
         {
             SocketHandler.FinishSocket();
+            SocketWorker.FinishSocket();
+            WatchThread.Abort();
+            try
+            {
+                SocketThread.Abort();
+                SheduleThread.Abort();
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
         }
     }
 }

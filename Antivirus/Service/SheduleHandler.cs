@@ -29,14 +29,14 @@ namespace Antivirus.Service
             {
                 if (TimeForScan == default(DateTime))
                 {
-                    File.AppendAllText(ServiceInformation.SocketPath, $"Надо {TimeForScan.Hour} {TimeForScan.Minute}" + "\r\n");
-                    File.AppendAllText(ServiceInformation.SocketPath, $"Надо {DateTime.Now.Hour} {DateTime.Now.Minute}" + "\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, $"Надо {TimeForScan.Hour} {TimeForScan.Minute}" + "\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, $"Надо {DateTime.Now.Hour} {DateTime.Now.Minute}" + "\r\n");
                     while (TimeForScan.Hour != DateTime.Now.Hour || TimeForScan.Minute != DateTime.Now.Minute)
                     {
                         Task.Delay(10000);
                     }
 
-                    File.AppendAllText(ServiceInformation.SocketPath, "Время пришло " + "\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, "Время пришло " + "\r\n");
 
                     List<String> viruses = Scan.ScanFolder(path);
 
@@ -52,7 +52,7 @@ namespace Antivirus.Service
                         }
                     }
 
-                    File.AppendAllText(ServiceInformation.SocketPath, "Получилось " + result + "\r\n");
+                    File.AppendAllText(ServiceInformation.LogsPath, "Получилось " + result + "\r\n");
 
                     return result;
                 }

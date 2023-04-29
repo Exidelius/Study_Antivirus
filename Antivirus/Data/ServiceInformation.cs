@@ -9,23 +9,19 @@ namespace Antivirus.Data
     static class ServiceInformation
     {
         private static string _folderName = "AntivirusFolder";
-        private static string _folderPath;
+        private static string _folderPath = /*GetLocalPath()*/$@"C:\{_folderName}";
 
         public static string ServiceName { get { return "AntivirusService"; } }
 
         public static string FolderPath { get { return _folderPath; } }
-        public static string DBFolderPath { get { return FolderPath + "AntivirusService"; } }
-        public static string CarantineFolderPath { get { return FolderPath + "Carantine"; } }
-        public static string SocketFolderPath { get { return FolderPath + "Socket"; } }
+        public static string DBFolderPath { get { return FolderPath + @"\DB"; } }
+        public static string CarantineFolderPath { get { return FolderPath + @"\Carantine"; } }
+        public static string LogsFolderPath { get { return FolderPath + @"\Logs"; } }
 
-        public static string SocketPath { get { return SocketFolderPath + @"\antivirus_socket.txt"; } }
-        public static string DBPath { get { return SocketFolderPath + @"\db.txt"; } }
-        public static string CarantinePath { get { return SocketFolderPath + @"\antivirus_carantine.txt"; } }
+        public static string LogsPath { get { return LogsFolderPath + @"\logs.txt"; } }
+        public static string DBPath { get { return DBFolderPath + @"\db.txt"; } }
+        public static string CarantinePath { get { return CarantineFolderPath + @"\carantine.txt"; } }
 
-        static ServiceInformation()
-        {
-            _folderPath = GetLocalPath();
-        }
-        private static string GetLocalPath() => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\" + _folderName;
+        //private static string GetLocalPath() => Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\" + _folderName;
     }
 }

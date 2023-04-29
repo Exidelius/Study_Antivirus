@@ -11,15 +11,17 @@ namespace Antivirus.Data
     {
         public static void CheckAndCreateIfNotExists()
         {
+            //Directory.CreateDirectory(@"C:\smth");
+
             CreateFolderIfNotExists(ServiceInformation.FolderPath);
 
             CreateFolderIfNotExists(ServiceInformation.CarantineFolderPath);
-            CreateFolderIfNotExists(ServiceInformation.SocketFolderPath);
+            CreateFolderIfNotExists(ServiceInformation.LogsFolderPath);
             CreateFolderIfNotExists(ServiceInformation.DBFolderPath);
 
             CreateObjectIfNotExists(ServiceInformation.CarantinePath);
-            CreateObjectIfNotExists(ServiceInformation.SocketPath);
-            CreateObjectIfNotExists(ServiceInformation.DBPath);
+            CreateObjectIfNotExists(ServiceInformation.LogsPath);
+            //UploadDumpIfNotExists(ServiceInformation.DBPath);
         }
 
         private static void CreateFolderIfNotExists(string path)

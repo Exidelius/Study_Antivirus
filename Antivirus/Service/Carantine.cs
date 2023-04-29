@@ -18,14 +18,14 @@ namespace Antivirus.Service
                 File.Move(path, newPath);
                 virusesInCarantine.Add(newPath, path);
 
-                File.AppendAllText(ServiceInformation.SocketPath, $"В карантин добавлен: {newPath}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"В карантин добавлен: {newPath}\r\n");
 
                 return newPath;
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex}\r\n");
 
                 return "";
             }
@@ -36,7 +36,7 @@ namespace Antivirus.Service
             var safeFile = Path.ChangeExtension(path, ".virusdetected");
             var fileInfo = new FileInfo(safeFile);
 
-            return $@"{ServiceInformation.CarantinePath}\{fileInfo.Name}";
+            return $@"{ServiceInformation.CarantineFolderPath}\{fileInfo.Name}";
         }
 
         public static string GoOutCatantine(string path)
@@ -52,8 +52,8 @@ namespace Antivirus.Service
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex}\r\n");
                 return "";
             }
         }
@@ -73,8 +73,8 @@ namespace Antivirus.Service
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex}\r\n");
             }
         }
 
@@ -120,8 +120,8 @@ namespace Antivirus.Service
             }
             catch (Exception ex)
             {
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex.Message}\r\n");
-                File.AppendAllText(ServiceInformation.SocketPath, $"{ex}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex.Message}\r\n");
+                File.AppendAllText(ServiceInformation.LogsPath, $"{ex}\r\n");
 
                 return "";
             }
